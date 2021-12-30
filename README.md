@@ -1,6 +1,11 @@
 # hi10anime-hotlink-extractor
 ### This is simple python script to automate the process of getting the hotlink from hi10anime.com. Skipping the Ads entirely, put the whole thing into .txt file and also put it into clipboard, which after that you can add into batch downloader like IDM and use the feature of  "Add Batch Download using Clipboard"
 
+#### Dependencies : pyperclip
+>pip install pyperclip
+
+You can skip this and delete the import in the script if you dont need the links to automaticaly copied into clipboard, since the whole hotlinks will also be generated into .txt file
+
 #### Usage Steps :
 1. Open hi10anime links, which contains anime that you would like to download. Like this one -> https://hi10anime.com/archives/46421
 2. Press the little box, that will expand the links to the anime that you want to download
