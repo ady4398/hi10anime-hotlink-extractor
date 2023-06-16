@@ -21,10 +21,6 @@ for m in re.finditer('https://masrur.hi10anime.com(.+?)">', text):
     foundtext = m.group(0)
     if foundtext.find('jtoken') != -1 or foundtext.find('btoken') != -1:
         my_file.write(m.group(0).replace('">','') + "\n")
-
-for m in re.finditer('drive.google.com(.+?)=download', text):
-    foundtext = m.group(0)
-    my_file.write(m.group(0).replace('&amp;','&') + "\n")
     
 html.close()
 my_file.close()
